@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/size_15dp"
+    android:layout_marginBottom="@dimen/size_10dp"
+    android:id="@+id/course_item"
+    >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:padding="@dimen/size_20dp"
+        android:background="#04567e"
+        >
+
+        <ImageView
+            android:id="@+id/course_icon"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:src="@drawable/icon_youtube"
+            />
+
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Youtube Darslar"
+            android:textSize="@dimen/size_25dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/agencyfbregular"
+            android:layout_gravity="center_vertical"
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/size_110dp"
+            android:layout_height="@dimen/size_30dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/course_closed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/size_15dp"
+                android:backgroundTint="@color/course_activation_status_bg"
+                >
+
+                <ImageView
+                    android:id="@+id/course_status_c"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:background="@drawable/lock_btn_orange"
+                    android:src="@drawable/status_icon_locked"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_18sp"
+                    android:padding="@dimen/size_5dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Dars"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/size_40dp"
+                    android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/course_count_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="12"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/size_80dp"
+                    android:gravity="center_vertical"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/course_opened"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/size_15dp"
+                android:backgroundTint="@color/course_activation_status_bg"
+                >
+
+                <ImageView
+                    android:id="@+id/course_status_o"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:background="@drawable/lock_btn_white"
+                    android:src="@drawable/status_icon_unlocked"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_18sp"
+                    android:padding="@dimen/size_5dp"
+                    android:layout_gravity="end"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Dars"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/size_15dp"
+                    android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/course_count_o"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="12"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/size_55dp"
+                    android:gravity="center_vertical"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="@dimen/size_20dp"
+            android:layout_height="@dimen/size_24dp"
+            android:src="@drawable/right_arrow"
+            android:paddingLeft="@dimen/size_5dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

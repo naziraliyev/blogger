@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Programming Courses</string>
+    <string name="registration_title">Ro\'yxatdan O\'tish</string>
+    <string name="Login_title">Kirish</string>
+    <string name="courses_title">Pullik Kurslar</string>
+    <string name="motivation_videos_title">Motivatsion Videolar</string>
+    <string name="base_url">http://blogger.almirab.uz</string>
+    <string name="buying_course">Sotib olish uchun kurslarni tanlang</string>
+    <string name="buying_course_all">Barchasini birdaniga tanlang va <font fgcolor='#fa6e00'> Chegirmaga  </font> ega bo\'ling</string>
+    <string name="tastiqlash_code">SMS Orqali kelgan <font fgcolor='#fa6e00'> Kodni </font> "Tasdiqlash" maydoniga kiriting</string>
+    <string name="login_text">Dasturga kirish uchun <font fgcolor='#fa6e00'> Telefon raqamingiz  </font> va <font fgcolor='#fa6e00'> ID raqamingizni </font> kiriting! </string>
+    <string name="registr_text">Ro\'yxatdan o\'tib darslarimni sotib oling va foydalaning </string>
+    <string name="registr2_text">Ro\'yxatdan o\'tish uchun  <font fgcolor='#fa6e00'> ismingiz </font> va <font fgcolor='#fa6e00'> telefon  </font> raqamingiz kiriting! </string>
+</resources>

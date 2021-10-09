@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CourseBuyingActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:fontFamily="@font/agencyfbbold"
+            android:gravity="center"
+            android:text="Sotib Olish"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_24dp"
+            android:textStyle="bold"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/size_40dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/course_background"
+
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/size_20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/course_background"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/size_15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:fontFamily="@font/agencyfbbold"
+                android:gravity="center"
+                android:text="@string/buying_course"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:fontFamily="@font/agencyfbbold"
+                android:gravity="center"
+                android:text="@string/buying_course_all"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18sp" />
+            <TextView
+                android:id="@+id/courseItemPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:fontFamily="@font/agencyfbbold"
+                android:gravity="right"
+                android:text="0"
+               android:layout_marginTop="@dimen/size_10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_buying_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_15dp"
+                tools:listitem="@layout/courses_list_buying" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/special_offers"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_75dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:background="@drawable/course_background_selected"
+                    app:cardCornerRadius="@dimen/size_15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/special_offers_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/register_button"
+                        android:elevation="@dimen/size_24dp"
+                        tools:ignore="OnClick">
+
+
+                        <TextView
+                            android:id="@+id/course_buying_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/size_20dp"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginBottom="23dp"
+                            android:fontFamily="@font/agencyfbbold"
+                            android:text="Barchasi birda"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_25dp" />
+
+                        <TextView
+                            android:id="@+id/course_title_chegirma"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_60dp"
+                            android:layout_toRightOf="@id/course_buying_name"
+                            android:fontFamily="@font/agencyfbbold"
+                            android:padding="@dimen/size_5dp"
+                            android:text="-25000 so'm"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_20sp" />
+
+                        <TextView
+                            android:id="@+id/course_summa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/course_title_chegirma"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/size_60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@id/course_buying_name"
+                            android:fontFamily="@font/agencyfbbold"
+                            android:padding="@dimen/size_5dp"
+                            android:text=" 75000 so'm "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_20sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:background="@drawable/main_background"
+        >
+
+        <Button
+            android:id="@+id/applyToCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buyutma berish"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/agencyfbbold"
+            android:textSize="@dimen/text_18sp"
+            android:layout_marginStart="@dimen/size_24dp"
+            android:layout_marginEnd="@dimen/size_24dp"
+            android:background="@drawable/register_button"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

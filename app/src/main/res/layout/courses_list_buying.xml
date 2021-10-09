@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/size_15dp"
+    android:layout_marginBottom="@dimen/size_10dp"
+    android:background="@drawable/course_background_selected"
+    android:id="@+id/course_item"
+    >
+
+    <LinearLayout
+        android:id="@+id/course_item_S"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_margin="0dp"
+        android:padding="@dimen/size_20dp"
+        android:background="#04567e"
+        >
+
+        <ImageView
+            android:id="@+id/course_icon_b"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:src="@drawable/icon_youtube"
+            />
+
+        <TextView
+            android:id="@+id/course_title_b"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Youtube Darslar"
+            android:textSize="@dimen/size_25dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/agencyfbregular"
+            android:layout_gravity="center_vertical"
+            />
+
+
+
+        <TextView
+            android:id="@+id/course_prise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200000 so'm"
+           android:padding="@dimen/size_5dp"
+            android:fontFamily="@font/agencyfbbold"
+            android:layout_marginLeft="@dimen/size_15dp"
+            android:textSize="@dimen/size_24dp"
+            android:layout_marginRight="@dimen/size_15dp"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
